@@ -1,0 +1,462 @@
+
+*** Running vivado
+    with args -log hdmi_text_controller_v1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_text_controller_v1_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source hdmi_text_controller_v1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 372.223 ; gain = 50.758
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/aherce2/ECE-385---Final-Project/ip_repo/hdmi_text_controller_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/aherce2/ECE-385---Final-Project/RD_hdmi_ip2020'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/ip 
+Command: read_checkpoint -auto_incremental -incremental c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/utils_1/imports/synth_1/hdmi_text_controller_v1_0.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/utils_1/imports/synth_1/hdmi_text_controller_v1_0.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top hdmi_text_controller_v1_0 -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 32304
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN0' becomes localparam in 'encode' with formal parameter declaration list [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:145]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN1' becomes localparam in 'encode' with formal parameter declaration list [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:146]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN2' becomes localparam in 'encode' with formal parameter declaration list [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:147]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN3' becomes localparam in 'encode' with formal parameter declaration list [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:148]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1187.988 ; gain = 409.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0' [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0_AXI' [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:467]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+WARNING: [Synth 8-324] index 4 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 5 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 6 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 7 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 8 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 9 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 10 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 11 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 12 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 13 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 14 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 15 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 16 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 17 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 18 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 19 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 20 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 21 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 22 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 23 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 24 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 25 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 26 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 27 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 28 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 29 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 30 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 31 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 32 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 33 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 34 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 35 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 36 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 37 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 38 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 39 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 40 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 41 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 42 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 43 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 44 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 45 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 46 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 47 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 48 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 49 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 50 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 51 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 52 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 53 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 54 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 55 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 56 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 57 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 58 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 59 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 60 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 61 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 62 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 63 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 64 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 65 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 66 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 67 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 68 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 69 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 70 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 71 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 72 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 73 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 74 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 75 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 76 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 77 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 78 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 79 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 80 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 81 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 82 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 83 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 84 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 85 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 86 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 87 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 88 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 89 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 90 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 91 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 92 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 93 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 94 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 95 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 96 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 97 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 98 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 99 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 100 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 101 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 102 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+WARNING: [Synth 8-324] index 103 out of range [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:693]
+INFO: [Common 17-14] Message 'Synth 8-324' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0_AXI' (0#1) [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0_AXI.sv:467]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:69]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79852]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 40.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79852]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:69]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/VGA_controller.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/VGA_controller.sv:26]
+WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0.sv:143]
+WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0.sv:143]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/synth/hdmi_tx_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_v1_0' [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/hdmi_tx_v1_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'srldelay' [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/srldelay.v:70]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644]
+INFO: [Synth 8-6155] done synthesizing module 'srldelay' (0#1) [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/srldelay.v:70]
+INFO: [Synth 8-6157] synthesizing module 'encode' [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'encode' (0#1) [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:79]
+INFO: [Synth 8-6157] synthesizing module 'encode__parameterized0' [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'encode__parameterized0' (0#1) [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:79]
+INFO: [Synth 8-6157] synthesizing module 'encode__parameterized1' [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'encode__parameterized1' (0#1) [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:79]
+INFO: [Synth 8-6157] synthesizing module 'serdes_10_to_1' [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/serdes_10_to_1.v:43]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6155] done synthesizing module 'serdes_10_to_1' (0#1) [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/serdes_10_to_1.v:43]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:90676]
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:90676]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_v1_0' (0#1) [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/hdmi_tx_v1_0.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/synth/hdmi_tx_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0' (0#1) [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0.sv:3]
+WARNING: [Synth 8-6014] Unused sequential element hdmi_ctl1_reg was removed.  [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/hdmi_tx_v1_0.v:148]
+WARNING: [Synth 8-3848] Net red in module/entity hdmi_text_controller_v1_0 does not have driver. [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0.sv:57]
+WARNING: [Synth 8-3848] Net green in module/entity hdmi_text_controller_v1_0 does not have driver. [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0.sv:57]
+WARNING: [Synth 8-3848] Net blue in module/entity hdmi_text_controller_v1_0 does not have driver. [c:/aherce2/ECE-385---Final-Project/lab7.2_provided/hdmi_text_controller_v1_0.sv:57]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1292.555 ; gain = 513.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1292.555 ; gain = 513.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1292.555 ; gain = 513.574
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1294.262 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz0/inst'
+Finished Parsing XDC File [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz0/inst'
+Parsing XDC File [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz0/inst'
+Finished Parsing XDC File [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz0/inst'
+Parsing XDC File [c:/aherce2/ECE-385---Final-Project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [c:/aherce2/ECE-385---Final-Project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/aherce2/ECE-385---Final-Project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hdmi_text_controller_v1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/hdmi_text_controller_v1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'clk_wiz0/inst'
+Finished Parsing XDC File [c:/aherce2/ece-385---final-project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'clk_wiz0/inst'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1330.098 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1330.098 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1330.098 ; gain = 551.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1330.098 ; gain = 551.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz0/inst. (constraint file  c:/aherce2/ECE-385---Final-Project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.runs/synth_1/dont_touch.xdc, line 11).
+Applied set_property KEEP_HIERARCHY = SOFT for vga_to_hdmi. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1330.098 ; gain = 551.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1330.098 ; gain = 551.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 2     
+	   5 Input    5 Bit       Adders := 6     
+	   4 Input    5 Bit       Adders := 3     
+	   8 Input    4 Bit       Adders := 6     
+	   2 Input    4 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 42    
++---Registers : 
+	               32 Bit    Registers := 5     
+	               14 Bit    Registers := 2     
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 15    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 41    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 6     
+	  22 Input   10 Bit        Muxes := 1     
+	   4 Input   10 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 23    
+	   2 Input    5 Bit        Muxes := 12    
+	   2 Input    4 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 26    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port axi_awprot[2] in module hdmi_text_controller_v1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[1] in module hdmi_text_controller_v1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[0] in module hdmi_text_controller_v1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[2] in module hdmi_text_controller_v1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[1] in module hdmi_text_controller_v1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[0] in module hdmi_text_controller_v1_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 1330.098 ; gain = 551.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:34 . Memory (MB): peak = 1330.098 ; gain = 551.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:34 . Memory (MB): peak = 1330.098 ; gain = 551.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:34 . Memory (MB): peak = 1330.098 ; gain = 551.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 1330.098 ; gain = 551.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 1330.098 ; gain = 551.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 1330.098 ; gain = 551.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 1330.098 ; gain = 551.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 1330.098 ; gain = 551.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 1330.098 ; gain = 551.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|hdmi_tx_0   | inst/encg/c0_reg_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     4|
+|2     |LUT1       |     2|
+|3     |LUT2       |    13|
+|4     |LUT3       |    42|
+|5     |LUT4       |    52|
+|6     |LUT5       |    95|
+|7     |LUT6       |   161|
+|8     |MMCME2_ADV |     1|
+|9     |OSERDESE2  |     8|
+|11    |SRL16E     |    39|
+|12    |FDCE       |    64|
+|13    |FDRE       |   281|
+|14    |FDSE       |     1|
+|15    |IBUF       |    47|
+|16    |OBUF       |    41|
+|17    |OBUFDS     |     4|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 1330.098 ; gain = 551.117
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:37 . Memory (MB): peak = 1330.098 ; gain = 513.574
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 1330.098 ; gain = 551.117
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1330.098 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1333.648 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: ec70800
+INFO: [Common 17-83] Releasing license: Synthesis
+66 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:45 . Memory (MB): peak = 1333.648 ; gain = 930.602
+INFO: [Common 17-1381] The checkpoint 'c:/aherce2/ECE-385---Final-Project/ip_repo/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.runs/synth_1/hdmi_text_controller_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file hdmi_text_controller_v1_0_utilization_synth.rpt -pb hdmi_text_controller_v1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 14 12:54:44 2023...

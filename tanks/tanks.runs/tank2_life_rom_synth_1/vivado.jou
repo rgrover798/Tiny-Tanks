@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Dec  7 16:07:01 2023
+# Process ID: 12808
+# Current directory: C:/aherce2/ECE-385---Final-Project/tanks/tanks.runs/tank2_life_rom_synth_1
+# Command line: vivado.exe -log tank2_life_rom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tank2_life_rom.tcl
+# Log file: C:/aherce2/ECE-385---Final-Project/tanks/tanks.runs/tank2_life_rom_synth_1/tank2_life_rom.vds
+# Journal file: C:/aherce2/ECE-385---Final-Project/tanks/tanks.runs/tank2_life_rom_synth_1\vivado.jou
+# Running On: DESKTOP-DCVGH3V, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 16856 MB
+#-----------------------------------------------------------
+source tank2_life_rom.tcl -notrace

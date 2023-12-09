@@ -1,0 +1,2 @@
+tank2_life_rom.v,verilog,xil_defaultlib,../../../../tanks.gen/sources_1/ip/tank2_life_rom/sim/tank2_life_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

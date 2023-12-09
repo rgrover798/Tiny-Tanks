@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="tanks" location="C:/aherce2/ECE-385---Final-Project/workspace_1/tanks" platform="C:/aherce2/ECE-385---Final-Project/workspace_1/tanks_top_level/export/tanks_top_level/tanks_top_level.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="tanks_system" sysConfig="tanks_top_level" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="6fdf276950d9f1c8a0a0b0c3ba2c360f">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1454816050">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1283480420" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
